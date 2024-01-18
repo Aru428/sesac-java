@@ -19,6 +19,8 @@ public class Practice2 {
 
         for (String arr : array)
             System.out.println(arr);
+
+        // scanner 닫기!
         sc.close();
     }
 }
