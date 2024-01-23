@@ -28,6 +28,16 @@ public class Rectangle {
         return width * height;
     }
 
+    static int instance;
+
+    public Rectangle() {
+        instance++;
+    }
+
+    static int getInstance() {
+        return instance;
+    }
+
     public static void main(String[] args) {
         Scanner sc =new Scanner(System.in);
         ArrayList<Rectangle> rect = new ArrayList<>();
@@ -52,6 +62,8 @@ public class Rectangle {
             System.out.println("넓이는: " + r.area());
             System.out.println("---------------------------------");
         }
+
+        System.out.println("Rectangle 인스턴스의 개수는: " + Rectangle.getInstance());
 
         // 입력 받은 값으로 Rectangle 객체 생성
         // Rectangle rectangle = new Rectangle(width, height);
