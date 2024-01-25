@@ -4,10 +4,12 @@ package _05_class._05_abstract;
 public abstract class Shape {
     // 필드 선언
     String color;
+    String type;
 
     // 생성자 선언
-    public Shape(String color) {
+    public Shape(String color, String type) {
         this.color = color;
+        this.type = type;
     }
 
     // 추상 메소드 선언 (abstract 키워드 사용)
@@ -17,6 +19,8 @@ public abstract class Shape {
 
     abstract void draw();
 
+    abstract double calculateArea();
+
     // 일반 메소드
     void start() {
         System.out.println("도형을 그려보자~");
@@ -24,5 +28,8 @@ public abstract class Shape {
 
     String getColor() {
         return color;
+    }
+    String getType() {
+        return type;
     }
 }
