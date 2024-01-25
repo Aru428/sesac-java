@@ -16,6 +16,7 @@ public class AnimalEx {
             System.out.println("동물의 종: " + a.getType());
             System.out.println(a.getType() + "의 이름: " + a.getName());
             System.out.println(a.getType() + "의 나이: " + a.getAge());
+            a.makeSound();
             System.out.println("===============================");
         }
     }

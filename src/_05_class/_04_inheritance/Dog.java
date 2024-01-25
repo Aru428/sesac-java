@@ -7,6 +7,7 @@ public class Dog extends Animal {
         setType("강아지");
     }
 
+    @Override
     public void makeSound() {
         System.out.println("멍멍");
     }
